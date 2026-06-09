@@ -24,27 +24,27 @@ keymap = [
         ["Escape",    "Q",    "W",      "E",     "R",     "T",           "RCtrl",    "Y",     "U",     "I",         "O",       "P"        ],
         ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
         ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
-        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],    
+        ["LAlt",     "Tab",   "No" ,   "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],    
     ],
 
     [
         ["Grave",   "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5",          "RCtrl",   "Kc6",    "Kc7",   "Kc8",       "Kc9",     "Kc0"      ],
         ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
         ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
-        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],     
+        ["LAlt",     "Tab",   "No",    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],     
     ],
 
     [
         ["Grave",     "F1",   "F2",    "F3",    "F4",    "F5",           "RCtrl",   "F6",     "F7",    "F8",        "F9",      "F10"  ],
         ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
         ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
-        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
+        ["LAlt",     "Tab",   "No",    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
     ],
     [
         ["Grave",      "User0","User1", "User2", "User3", "User4",   "User5"           "RCtrl",   "F6",     "F7",    "F8",        "F9",      "F10"  ],
         ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
         ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
-        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
+        ["LAlt",     "Tab",   "No",    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
     ],
 ]
 
