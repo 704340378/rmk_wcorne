@@ -1,35 +1,90 @@
-# Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
-vendor_id = 0x4c4b
-product_id = 0x4643
-manufacturer = "RMK"
-chip = "rp2040"
+name = "WCORNE RMK Keyboard"
+product_name = "WVORNE-RMK"
+vendor_id = 0x45D4
+product_id = 0x0027
+manufacturer = "DH747"
+chip = "nrf52840"
+usb_enable = true
 
-[matrix]
-# Row and col pins are mandatory
-row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-col_pins = ["PIN_19", "PIN_20", "PIN_21"]
+[split]
+connection = "ble"
 
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-# row2col = true
+[storage]
+enabled = true
+clear_storage = true
+
 
 [layout]
 rows = 4
-cols = 3
-layers = 2
+cols = 12
+layers = 4
 keymap = [
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        ["Escape",    "Q",    "W",      "E",     "R",     "T",           "RCtrl",    "Y",     "U",     "I",         "O",       "P"        ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
+        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],    
+    ],
+
+    [
+        ["Grave",   "Kc1",  "Kc2",    "Kc3",   "Kc4",   "Kc5",          "RCtrl",   "Kc6",    "Kc7",   "Kc8",       "Kc9",     "Kc0"      ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
+        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],     
+    ],
+
+    [
+        ["Grave",     "F1",   "F2",    "F3",    "F4",    "F5",           "RCtrl",   "F6",     "F7",    "F8",        "F9",      "F10"  ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
+        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
     ],
     [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
+        ["Grave",      "User0","User1", "User2", "User3", "User4",   "User5"           "RCtrl",   "F6",     "F7",    "F8",        "F9",      "F10"  ],
+        ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
+        ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
+        ["LAlt",     "Tab",   "No"    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
     ],
 ]
+
+
+[split.central]
+rows = 4
+cols = 6
+row_offset = 0
+col_offset = 0
+
+[split.central.matrix]
+matrix_type = "normal"
+row_pins = ["P0_10", "P1_06", "P0_09", "P1_04"]
+col_pins = ["P1_13", "P1_02", "P1_10","P0_29", "P0_31","P0_30""]
+
+[[split.peripheral]]
+rows = 4
+cols = 6
+row_offset = 0
+col_offset = 6
+
+[split.peripheral.matrix]
+matrix_type = "normal"
+row_pins = ["P0_10", "P1_06", "P0_09", "P1_04"]
+col_pins = ["P1_13", "P1_02", "P1_10","P0_29","P0_05","P1_09"]
+
+[ble]
+enabled = true
+#battery_adc_pin = "vddh"
+battery_adc_pin = "P0_28"
+adc_divider_measured = 2000
+adc_divider_total = 2806
+charge_state.pin = "P1_11"
+charge_state.low_active = false
+
+[host]
+vial_enabled = true
+unlock_keys = [[0, 0], [0, 1]]
+
+[aliases]
+my_cut = "WM(X, LCtrl)"
+my_copy = "WM(C, LCtrl)"
+my_paste = "WM(V, LCtrl)"
