@@ -41,7 +41,7 @@ keymap = [
         ["LAlt",     "Tab",   "No",    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
     ],
     [
-        ["Grave",    "User0","User1", "User2", "User3", "User4",  "User5" ,      "RCtrl",   "F6",     "F7",    "F8",        "F9",      "F10"  ],
+        ["Grave",    "User0","User1", "User2", "User3", "User4",       "User5",   "F6",     "F7",    "F8",        "F9",      "F10"  ],
         ["CapsLock",  "A",    "S",      "D",     "F",     "G",           "RShift",   "H",     "J",     "K",         "L",       "Semicolon"],
         ["LShift",    "Z",    "X",      "C",     "V",     "B",            "No",      "N",     "M",     "Comma",     "Dot",     "Slash"    ],
         ["LAlt",     "Tab",   "No",    "LCtrl",  "MO(1)", "Space",         "Enter",   "MO(2)", "RGui",  "Backspace",  "Quote",  "Delete"   ],      
