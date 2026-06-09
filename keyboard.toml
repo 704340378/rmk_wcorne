@@ -4,7 +4,7 @@ product_name = "WCORNE-RMK"
 vendor_id = 0x45D4
 product_id = 0x0027
 manufacturer = "DH747"
-chip = "nrf52833"
+chip = "nrf52840"
 usb_enable = true
 
 [split]
