@@ -73,12 +73,12 @@ col_pins = ["P1_11", "P1_10", "P0_03","P0_28", "P1_13","P0_02"]
 
 [ble]
 enabled = true
-#battery_adc_pin = "vddh"
-battery_adc_pin = "P0_30"
-adc_divider_measured = 2000
-adc_divider_total = 2806
-charge_state.pin = "P0_00"
-charge_state.low_active = false
+battery_adc_pin = "vddh"
+#battery_adc_pin = "P0_30"
+#adc_divider_measured = 2000
+#adc_divider_total = 2806
+#charge_state.pin = "P0_00"
+#charge_state.low_active = false
 
 [host]
 vial_enabled = true
