@@ -74,11 +74,20 @@ col_pins = ["P1_11", "P1_10", "P0_03","P0_28", "P1_13","P0_02"]
 [ble]
 enabled = true
 battery_adc_pin = "vddh"
-#battery_adc_pin = "P0_30"
-#adc_divider_measured = 2000
-#adc_divider_total = 2806
-#charge_state.pin = "P0_00"
-#charge_state.low_active = false
+
+[led]
+[[led.indicators]]
+id = 0
+pin = "P0_00"
+low_active = false   # 高电平点亮
+
+[behavior]
+[[behavior.battery]]
+event = "low_voltage"
+action = "blink_led"
+led_id = 0
+interval_ms = 500   # 每 500ms 闪一次
+count = 0           # 0 = 一直闪，直到恢复
 
 [host]
 vial_enabled = true
