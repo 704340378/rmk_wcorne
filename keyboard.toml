@@ -81,13 +81,7 @@ id = 0
 pin = "P0_00"
 low_active = false   # 高电平点亮
 
-[behavior]
-[[behavior.battery]]
-event = "low_voltage"
-action = "blink_led"
-led_id = 0
-interval_ms = 500   # 每 500ms 闪一次
-count = 0           # 0 = 一直闪，直到恢复
+
 
 [host]
 vial_enabled = true
